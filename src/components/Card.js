@@ -3,13 +3,13 @@ import '../App.css';
 import CardImage from './CardImage.js';
 import CardInfo from './CardInfo.js';
 
-function Card() {
+function Card(props) {
   return(
     <li className="cards-item fourth">
       <div className="card">
         <div className="card-content">
             <CardImage />
-            <CardInfo />
+            <CardInfo name={props.name} description={props.description} latitude={props.latitude} longitude={props.longitude}/>
         </div>
       </div>
     </li>
